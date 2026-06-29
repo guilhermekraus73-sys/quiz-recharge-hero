@@ -24,10 +24,11 @@ type Package = {
 };
 
 const packages: Package[] = [
-  { id: 1, diamonds: 5600, price: 9.0, bonus: 1120, paymentUrl: "https://pfdxbd-gx.myshopify.com/cart/51354363855064:1?channel=buy_button" },
-  { id: 2, diamonds: 11200, price: 15.9, bonus: 2240, paymentUrl: "https://pfdxbd-gx.myshopify.com/cart/51354363887832:1?channel=buy_button" },
-  { id: 3, diamonds: 22400, price: 19.0, bonus: 4480, paymentUrl: "https://pfdxbd-gx.myshopify.com/cart/51354363920600:1?channel=buy_button" },
-  { id: 4, diamonds: 29500, price: 25.0, bonus: 5900, paymentUrl: "https://pfdxbd-gx.myshopify.com/cart/51354363920600:1?channel=buy_button" },
+  { id: 1, diamonds: 5600, price: 9.0, bonus: 1120, paymentUrl: "https://nutdrs-wa.myshopify.com/cart/59374793687121:1?channel=buy_button" },
+  { id: 2, diamonds: 11200, price: 15.9, bonus: 2240, paymentUrl: "https://nutdrs-wa.myshopify.com/cart/59374793719889:1?channel=buy_button" },
+  { id: 3, diamonds: 22400, price: 19.0, bonus: 4480, paymentUrl: "https://nutdrs-wa.myshopify.com/cart/59374793752657:1?channel=buy_button" },
+  { id: 4, diamonds: 29500, price: 25.0, bonus: 5900, paymentUrl: "https://nutdrs-wa.myshopify.com/cart/59513778929745:1?channel=buy_button" },
+
 ];
 
 const paymentMethods = [
