@@ -32,7 +32,7 @@ const IdPlayer: React.FC = () => {
       alert("Por favor, introduce el ID del jugador.");
       return;
     }
-    navigate("/recharge-strip" + location.search);
+    navigate("/recharge" + location.search);
   };
 
   return (
