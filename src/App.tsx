@@ -3,6 +3,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import Presell from "./pages/Presell";
 import Quiz from "./pages/Quiz";
 import IdPlayer from "./pages/IdPlayer";
 import Recharge from "./pages/Recharge";
@@ -17,7 +18,8 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Navigate to="/quiz" replace />} />
+          <Route path="/" element={<Navigate to="/presell" replace />} />
+          <Route path="/presell" element={<Presell />} />
           <Route path="/quiz" element={<Quiz />} />
           <Route path="/id-player" element={<IdPlayer />} />
           <Route path="/recharge" element={<Recharge />} />
