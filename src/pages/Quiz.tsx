@@ -238,7 +238,7 @@ const Quiz: React.FC = () => {
             </p>
 
             <button
-              onClick={() => navigate(getNavigationPath("/identificar"))}
+              onClick={() => navigate(getNavigationPath("/id-player"))}
               className="w-full mb-3 py-3 rounded-xl font-semibold btn-primary-gradient"
             >
               Reclamar Premio 💎
