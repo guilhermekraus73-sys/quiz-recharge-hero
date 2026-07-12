@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 export const useUtmifyHotmartPixel = () => {
   useEffect(() => {
     // Set the Hotmart UTMify pixel ID
-    (window as any).pixelId = "69278ad9ee8cbd6ab35aae54";
+    (window as any).pixelId = "694319ad74dd503618cd6322";
 
     // Add the pixel script
     const pixelScript = document.createElement("script");
@@ -21,6 +21,7 @@ export const useUtmifyHotmartPixel = () => {
     utmsScript.setAttribute("async", "");
     utmsScript.setAttribute("defer", "");
     utmsScript.setAttribute("src", "https://cdn.utmify.com.br/scripts/utms/latest.js");
+    utmsScript.setAttribute("data-utmify-prevent-xcod-sck", "");
     utmsScript.setAttribute("data-utmify-prevent-subids", "");
     utmsScript.id = "utmify-utms-hotmart";
     

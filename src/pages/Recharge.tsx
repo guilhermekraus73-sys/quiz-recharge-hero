@@ -274,7 +274,7 @@ const Recharge: React.FC = () => {
         {/* Continue Button */}
         <button
           onClick={handleContinue}
-          className="w-full py-3 rounded-xl font-semibold btn-primary-gradient"
+          className="go-to-checkout w-full py-3 rounded-xl font-semibold btn-primary-gradient"
         >
           Continuar
         </button>
