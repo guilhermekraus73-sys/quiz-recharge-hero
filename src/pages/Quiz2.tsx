@@ -85,7 +85,7 @@ const questions: Question[] = [
   },
 ];
 
-const Quiz: React.FC = () => {
+const Quiz2: React.FC = () => {
   const navigate = useNavigate();
   const location = useLocation();
   useUtmifyHotmartPixel();
@@ -238,7 +238,7 @@ const Quiz: React.FC = () => {
             </p>
 
             <button
-              onClick={() => navigate(getNavigationPath("/id-player"))}
+              onClick={() => navigate(getNavigationPath("/id-player2"))}
               className="w-full mb-3 py-3 rounded-xl font-semibold btn-primary-gradient"
             >
               Reclamar Premio 💎
@@ -365,4 +365,4 @@ const Quiz: React.FC = () => {
   );
 };
 
-export default Quiz;
+export default Quiz2;

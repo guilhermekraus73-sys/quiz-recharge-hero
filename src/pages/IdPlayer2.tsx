@@ -9,7 +9,7 @@ import freefireIcon from "@/assets/freefire-character.png";
 import diamondIcon from "@/assets/diamond-icon.png";
 import freefireBanner from "@/assets/freefire-banner.png";
 
-const IdPlayer: React.FC = () => {
+const IdPlayer2: React.FC = () => {
   const [playerId, setPlayerId] = useState("");
   const navigate = useNavigate();
   const location = useLocation();
@@ -32,7 +32,7 @@ const IdPlayer: React.FC = () => {
       alert("Por favor, introduce el ID del jugador.");
       return;
     }
-    navigate("/recharge" + location.search);
+    navigate("/recharge2" + location.search);
   };
 
   return (
@@ -137,4 +137,4 @@ const IdPlayer: React.FC = () => {
   );
 };
 
-export default IdPlayer;
+export default IdPlayer2;

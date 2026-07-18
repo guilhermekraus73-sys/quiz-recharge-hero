@@ -41,7 +41,7 @@ const paymentMethods = [
   { id: "pse", name: "PSE", logo: paymentPse },
 ];
 
-const Recharge: React.FC = () => {
+const Recharge2: React.FC = () => {
   const [selectedPackage, setSelectedPackage] = useState<number | null>(null);
   const [selectedPayment, setSelectedPayment] = useState("credit");
   const [searchParams] = useSearchParams();
@@ -303,4 +303,4 @@ const Recharge: React.FC = () => {
   );
 };
 
-export default Recharge;
+export default Recharge2;
