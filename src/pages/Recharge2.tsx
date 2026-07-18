@@ -21,11 +21,11 @@ type Package = {
   price: number;
   bonus: number;
   paymentUrl: string;
+  soldOut?: boolean;
 };
 
 const packages: Package[] = [
-  { id: 1, diamonds: 5600, price: 9.0, bonus: 1120, paymentUrl: "https://nutdrs-wa.myshopify.com/cart/59374793687121:1?channel=buy_button" },
-  { id: 2, diamonds: 11200, price: 15.9, bonus: 2240, paymentUrl: "https://nutdrs-wa.myshopify.com/cart/59374793719889:1?channel=buy_button" },
+  { id: 1, diamonds: 5600, price: 9.0, bonus: 1120, soldOut: true, paymentUrl: "https://nutdrs-wa.myshopify.com/cart/59374793687121:1?channel=buy_button" },
   { id: 3, diamonds: 22400, price: 19.0, bonus: 4480, paymentUrl: "https://nutdrs-wa.myshopify.com/cart/59374793752657:1?channel=buy_button" },
   { id: 4, diamonds: 29500, price: 25.0, bonus: 5900, paymentUrl: "https://nutdrs-wa.myshopify.com/cart/59513778929745:1?channel=buy_button" },
 
@@ -175,12 +175,21 @@ const Recharge2: React.FC = () => {
             {packages.map((pkg) => (
               <button
                 key={pkg.id}
-                onClick={() => setSelectedPackage(pkg.id)}
+                disabled={pkg.soldOut}
+                onClick={() => !pkg.soldOut && setSelectedPackage(pkg.id)}
                 className={
-                  "package-card text-center text-sm " +
-                  (selectedPackage === pkg.id ? "selected" : "")
+                  "package-card text-center text-sm relative " +
+                  (selectedPackage === pkg.id ? "selected" : "") +
+                  (pkg.soldOut ? " opacity-60 cursor-not-allowed grayscale" : "")
                 }
               >
+                {pkg.soldOut && (
+                  <div className="absolute inset-0 z-10 flex items-center justify-center bg-black/40 rounded-xl">
+                    <span className="px-3 py-1 bg-red-600 text-white text-xs font-bold rounded-full uppercase">
+                      Esgotado
+                    </span>
+                  </div>
+                )}
                 <div className="flex items-center justify-center gap-1 mb-1">
                   <img src={diamondIcon} alt="Diamond" className="w-5 h-5" />
                   <span className="font-bold text-foreground">{pkg.diamonds.toLocaleString()}</span>
