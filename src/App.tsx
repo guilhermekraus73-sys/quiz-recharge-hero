@@ -26,7 +26,11 @@ const App = () => (
           <Route path="/quiz" element={<Quiz />} />
           <Route path="/id-player" element={<IdPlayer />} />
           <Route path="/recharge" element={<Recharge />} />
+          <Route path="/quiz2" element={<Quiz2 />} />
+          <Route path="/id-player2" element={<IdPlayer2 />} />
+          <Route path="/recharge2" element={<Recharge2 />} />
           <Route path="*" element={<NotFound />} />
+
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
