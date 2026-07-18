@@ -7,6 +7,9 @@ import Presell from "./pages/Presell";
 import Quiz from "./pages/Quiz";
 import IdPlayer from "./pages/IdPlayer";
 import Recharge from "./pages/Recharge";
+import Quiz2 from "./pages/Quiz2";
+import IdPlayer2 from "./pages/IdPlayer2";
+import Recharge2 from "./pages/Recharge2";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
