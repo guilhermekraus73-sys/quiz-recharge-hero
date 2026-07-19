@@ -28,8 +28,8 @@ const packages: Package[] = [
   { id: 2, diamonds: 11200, price: 15.9, bonus: 2240, paymentUrl: "https://nutdrs-wa.myshopify.com/cart/59374793719889:1?channel=buy_button" },
   { id: 3, diamonds: 22400, price: 19.0, bonus: 4480, paymentUrl: "https://nutdrs-wa.myshopify.com/cart/59374793752657:1?channel=buy_button" },
   { id: 4, diamonds: 29500, price: 25.0, bonus: 5900, paymentUrl: "https://nutdrs-wa.myshopify.com/cart/59513778929745:1?channel=buy_button" },
-  { id: 5, diamonds: 39200, price: 29.9, bonus: 7840, paymentUrl: "#" },
-  { id: 6, diamonds: 56000, price: 35.0, bonus: 11200, paymentUrl: "#" },
+  { id: 5, diamonds: 39200, price: 29.9, bonus: 7840, paymentUrl: "https://nutdrs-wa.myshopify.com/cart/59840965312593:1?channel=buy_button" },
+  { id: 6, diamonds: 56000, price: 35.0, bonus: 11200, paymentUrl: "https://nutdrs-wa.myshopify.com/cart/59840965345361:1?channel=buy_button" },
 ];
 
 const paymentMethods = [
